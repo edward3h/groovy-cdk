@@ -1,0 +1,29 @@
+plugins {
+    // Apply the groovy Plugin to add support for Groovy.
+    id 'groovy'
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    constraints {
+
+        implementation 'org.apache.groovy:groovy-all:4.0.6'
+    }
+
+    // Use the latest Groovy version for building this library
+    implementation 'org.apache.groovy:groovy-all'
+}
+
+testing {
+    suites {
+        // Configure the built-in test suite
+        test {
+            // Use JUnit Jupiter test framework
+            useJUnitJupiter('5.9.1')
+        }
+    }
+}

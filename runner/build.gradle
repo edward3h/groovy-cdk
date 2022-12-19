@@ -1,0 +1,13 @@
+
+plugins {
+    id 'org.ethelred.cdk.groovy-application-conventions'
+}
+
+dependencies {
+    implementation project(':support')
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'org.ethelred.cdk.app.App'
+}

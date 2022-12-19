@@ -1,0 +1,15 @@
+
+plugins {
+    id 'org.ethelred.cdk.groovy-library-conventions'
+}
+
+dependencies {
+    api 'software.amazon.awscdk:aws-cdk-lib:2.54.0'
+    implementation 'software.constructs:constructs:10.1.187'
+
+}
+
+repositories {
+    mavenCentral()
+}
+
